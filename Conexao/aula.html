@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="" href="style.css" media="" />
 </head>
+
 <body>
 
 
@@ -17,11 +19,29 @@
         <input type="password" name="senha" placeholder="Senha" value="" required>
         <input type="date" name="dataNascimento" required>
         <input type="number" name="peso" placeholder="Peso" required>
-        <input type="submit" value="Enviar" required>
+        <input type="submit" name="salvar" value="Enviar" required>
 
     </form>
 
-    <script src="script.js" ></script>
-    
+    <h1>Exclusão</h1>
+    <form method="GET" action="back.php">
+        <label for="">Codigo do usuario</label>
+        <input type="text" required name="id" placeholder="id" required>
+        <input type="submit" name="deletar" value="Deletar" required>
+
+    </form>
+
+    <h1>Mostrar dados</h1>
+    <form method="GET" action="back.php">
+        <label for="">Buscar usuario</label>
+        <input type="text" required name="id" placeholder="id" required>
+        <input type="submit" name="mostrar" value="Mostrar" required>
+
+    </form>
+
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
